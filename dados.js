@@ -8,7 +8,7 @@ let dados = [
         obras: ["Kindred", "Parable of the Sower", "Parable of the Talents", "Dawn"],
         adaptacoes: [], // Se houver adaptações, adicione aqui
         foto: "https://images.squarespace-cdn.com/content/v1/5af9a86fc3c16a3922fe3d13/1633709567752-YTANLX708KW0LXMZGU0Q/OEBHR-21070462_0084B_RBJ.jpeg",
-        tags: ["afrofuturismo", "ficção_especulativa", "racismo", "feminismo", "mudanças_climáticas", "ecologia", "escravidao"]
+        tags: ["afrofuturismo", "ficção especulativa", "racismo", "feminismo", "mudanças climáticas", "ecologia", "escravidão"]
     },
     {
         nome: "Ursula K. Le Guin",
@@ -18,7 +18,7 @@ let dados = [
         obras: ["A Mão Esquerda da Escuridão", "A Terra Marinha", "Os Despossuídos", "Sempre o Rio"],
         adaptacoes: [],
         foto: "ursula_le_guin.jpg",
-        tags: ["ficção_especulativa", "fantasia", "feminismo", "utopia", "distopia", "filosofia", "anarquismo", "ecologia"]
+        tags: ["ficção especulativa", "fantasia", "feminismo", "utopia", "distopia", "filosofia", "anarquismo", "ecologia"]
       },
       {
         nome: "Mary Shelley",
@@ -27,6 +27,6 @@ let dados = [
         obras: ["Frankenstein"],
         adaptacoes: ["Frankenstein (1931) de James Whale", "O Jovem Frankenstein (1974) de "],
         foto: "mary_shelley.jpg",
-        tags: ["ficção_gótica", "ficção_científica", "horror", "ciencia_ficção", "literatura_gotica", "frankenstein", "criação_artificial"]
+        tags: ["ficção gótica", "ficção científica", "horror", "ciencia ficção", "literatura gotica", "frankenstein", "criação artificial"]
     },
 ];
