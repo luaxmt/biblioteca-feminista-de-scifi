@@ -45,17 +45,35 @@ function pesquisar() {
   }
 
   (function() {
-    const tags = new Set()
+    const tags = []
 
-      for (dado of dados) {
-        dado.tags.forEach(tag => {
-            if(tags.size <= 5) tags.add(tag);
-        })
+    for (dado of dados) {
+        tags.push(...dado.tags)
+    }
 
-      }
+    const orderedTags = orderTags(tags).slice(0, 5)
 
-      const tagsEl = document.getElementById('tags')
-        tags.forEach(tag => {
-          tagsEl.innerHTML += `<li>${tag}</li>`
-      })
+    const tagsEl = document.getElementById('tags')
+        orderedTags.forEach(tag => {
+            tagsEl.innerHTML += `<li>${tag}</li>`
+         })
   })()
+
+
+  function orderTags(tags) {
+    const contagem = tags.reduce((acc, palavra) => {
+        acc[palavra] = (acc[palavra] || 0) + 1;
+        return acc;
+    }, {});
+  
+  // Converter o objeto de contagem em um array de objetos
+  const paresChaveValor = Object.entries(contagem);
+  
+  // Ordenar o array por contagem em ordem decrescente
+  const ordenado = paresChaveValor.sort((a, b) => b[1] - a[1]);
+  
+  // Extrair apenas as palavras do array ordenado
+  const resultado = ordenado.map(([palavra]) => palavra);
+  
+  return resultado;
+}
