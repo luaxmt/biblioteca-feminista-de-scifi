@@ -43,3 +43,19 @@ function pesquisar() {
 
     section.innerHTML = resultados; // Atribui os resultados gerados à seção HTML
   }
+
+  (function() {
+    const tags = new Set()
+
+      for (dado of dados) {
+        dado.tags.forEach(tag => {
+            if(tags.size <= 5) tags.add(tag);
+        })
+
+      }
+
+      const tagsEl = document.getElementById('tags')
+        tags.forEach(tag => {
+          tagsEl.innerHTML += `<li>${tag}</li>`
+      })
+  })()
