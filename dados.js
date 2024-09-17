@@ -27,6 +27,6 @@ let dados = [
         obras: ["Frankenstein"],
         adaptacoes: ["Frankenstein (1931) de James Whale", "O Jovem Frankenstein (1974) de "],
         foto: "mary_shelley.jpg",
-        tags: ["ficção gótica", "ficção científica", "horror", "ciencia ficção", "literatura gotica", "frankenstein", "criação artificial"]
+        tags: ["ficção gótica", "ficção científica", "horror", "ciencia ficção", "literatura gótica", "criação artificial"]
     },
 ];
